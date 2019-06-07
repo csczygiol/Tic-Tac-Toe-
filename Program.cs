@@ -19,7 +19,8 @@ namespace Tic_Tac_Toe
             {
                 for (int j = 0; j < row; j++)
                 {
-
+                    table[i, j] = 0;
+                    Console.WriteLine(table);
                 }
             }
                 
