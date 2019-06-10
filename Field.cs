@@ -37,13 +37,30 @@ namespace Tic_Tac_Toe
 
         public bool SetStatus(Status status) // it is a void because we can't use return in this method
         {
-            if(status == Status.N) //kleines status variable, großes Status Enum
+            if(this.status != Status.N) //kleines status variable, großes Status Enum // Muss erst das überprüfen was eingespeichert ist
             {
                 return false; //überprüfung ob ein Feld besetzt ist oder nicht besetzt ist    
             }
             this.status = status;
             return true;
             
+        }
+
+        public string GetStatus() //Großes String Obejekt, kleines string Datentyp
+        {
+            if (status == Status.N)
+            {
+                return "N";
+            }
+            if (status == Status.O)
+            {
+                return "O";
+            }
+            if (status == Status.X)
+            {
+                return "X";
+            }
+            return null;
         }
     }
 }
