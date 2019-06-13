@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tic_Tac_Toe
 {
-    class Position
+    class Position //column and row together as a Field
     {
         public int row;
         public int column;
